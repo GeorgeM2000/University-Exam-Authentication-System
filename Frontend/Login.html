@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Student Exams Authentication System">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Authentication System</title>
+        <link href="Login_Style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="student_login">
+            <h1>Login</h1>
+
+            <form action="/login" method="POST">
+                <div class="text_field">
+                    <input type="email" required name="email">
+                    <label>Email</label>
+                </div>
+                <div class="text_field">
+                    <input type="password" required name="password">
+                    <label>Password</label>
+                </div>
+                <button type="submit" id="login_btn">Login</button>
+            </form>
+        </div>
+        
+    </body>
+</html>
