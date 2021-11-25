@@ -12,11 +12,11 @@ app.use(express.urlencoded({extended: true}));
 
 // Create connection and specify DB information
 var mysql_connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "gmaok25m8102000DIS@ email",
-    port: 3306,
-    database: "university_exam_authentication_system"
+    host: "url",
+    user: "username",
+    password: "password for database",
+    port: "port to database",
+    database: "your database"
 });
 
 // Connect to MySQL DB
@@ -30,12 +30,12 @@ mysql_connection.connect((err) => {
 
 // Check if server is working
 app.get("/login", (req, res) => {
-    res.sendFile("C:/Users/giorg/aiVenv/University_Exams_Authentication_System/Frontend/Login.html");
+    res.sendFile("/Frontend/Login.html");
 });
 
 
 app.get("/id_verification", (req, res) => {
-    res.sendFile("C:/Users/giorg/aiVenv/University_Exams_Authentication_System/Frontend/ID_Verification.html");
+    res.sendFile("/Frontend/ID_Verification.html");
 });
 
 
@@ -43,7 +43,7 @@ app.get("/id_verification", (req, res) => {
 app.post("/id_verification", (req, res) => {
     let spawn = require("child_process").spawn;
 
-    let process = spawn("C:/Users/giorg/aiVenv/Scripts/python.exe", ["./QR_Code_Reader.py"]);
+    let process = spawn("python.exe", ["./QR_Code_Reader.py"]);
 
     process.stdout.on("data", function(data) {
 
