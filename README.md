@@ -4,12 +4,12 @@
  So i implemented an autonomous way to do that using a QR/Barcode python library.
  
 # Requirements 
-- Python
-  ### Python Libraries
-  - cv2
-  - numpy
-  - pyzbar
-  - time
+
+### Python Libraries
+- cv2
+- numpy
+- pyzbar
+- time
 ### Nmp packages
 - express
 - path
