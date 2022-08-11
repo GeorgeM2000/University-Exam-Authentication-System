@@ -1,7 +1,11 @@
 # University Exam Authentication System
- An implemented idea of a university authentication system that can be used for online exams.
- Semester exams can take a long time because the authentication process is done by the supervisor.
- So i implemented an autonomous way to do that using a QR/Barcode python library.
+ A university authentication system idea that can be used for online exams.
+ 
+# Description 
+Semester online exams can take a long time because the authentication process is done by the supervisor.
+During online exams a supervisor authenticates the students by checking their identification card. This process is time consuming and inefficient so i implemented an autonomous way to do that using a QR/Barcode python library.
+Once the QR code is scanned a number is extracted which is the student's ID. Then, a validation check is done in the database using the student's ID. If the validation succeeds the student's can see their private information.
+
  
 # Requirements 
 
